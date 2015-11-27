@@ -29,8 +29,8 @@ class TestFibgen:
         expected = [1, 1, 2, 3, 5, 8, 13]
         assert(result == expected)
 
-    @pytest.mark.randomize(num=int, min_num=1, max_num=10000, ncalls=10)
+    @pytest.mark.randomize(num=int, min_num=3, max_num=1000, ncalls=100)
     def test_quickcheck(self, num):
         result = list(fibgen(num))
-        assert(result[0] <= result[-1])
+        assert(result[0] < result[-1])
         assert(len(result) == num)
