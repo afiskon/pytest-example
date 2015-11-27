@@ -1,5 +1,6 @@
 .idea
 .cache
 out.html
+html/*
 *.pyc
 *.html
