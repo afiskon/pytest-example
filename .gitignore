@@ -1,6 +1,9 @@
 .idea
 .cache
+.coverage
 out.html
-html/*
+html
+htmlcov
 *.pyc
 *.html
+*,cover
